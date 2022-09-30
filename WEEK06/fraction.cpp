@@ -2,17 +2,12 @@
 #include "fraction.h"
 using namespace std;
 
-// Euclid's Algorithm for finding
-// the greatest common divisor (gcd)
-int gcd(int u, int v);
-
 fraction::fraction(int n, int d)
 {
     this->numerator = n;
     this->denominator = d;
     if (denominator == 0)
         this->denominator = 1;
-    // Reduce();
 }
 
 fraction fraction::operator+(fraction f2)
@@ -85,12 +80,3 @@ ostream &operator<<(ostream &out, const fraction &result)
 //     input >> choice;
 //     return input;
 // }
-
-int gcd(int u, int v)
-{
-
-    if (v == 0)
-        return u;
-
-    return gcd(v, u % v);
-}

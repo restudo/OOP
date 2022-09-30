@@ -9,9 +9,6 @@ int main(int argc, char const *argv[])
     char choice;
     fraction temp;
 
-    // fraction title;
-    // cin >> title;
-
     for (int i = 0; i < 10; i++)
     {
         num[i] = 1 + rand() % 5;

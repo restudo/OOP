@@ -1,8 +1,5 @@
 #include <iostream>
 using namespace std;
-// Euclid's Algorithm for finding
-// the greatest common divisor (gcd)
-int gcd(int u, int v);
 
 class fraction
 {
